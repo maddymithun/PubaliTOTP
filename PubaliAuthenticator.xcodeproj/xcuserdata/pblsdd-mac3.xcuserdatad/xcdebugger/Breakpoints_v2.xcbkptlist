@@ -1,0 +1,578 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FE587320-A45E-4EFC-B047-28E40E15D0B1"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9B315E56-6B20-462F-835D-36C3A0CD0A80"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2A6E1341-354B-4FA8-A938-66D6BF48178E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubaliAuthenticator/Splash/SplashViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "showLoginScreen()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "2A6E1341-354B-4FA8-A938-66D6BF48178E - c7557eb8cd703432"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PubaliAuthenticator.SplashViewController.showLoginScreen() -&gt; ()"
+                  moduleName = "PubaliAuthenticator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pblsdd-mac3/Documents/IOS%20Project/PubaliAuthenticator/PubaliAuthenticator/Splash/SplashViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "2A6E1341-354B-4FA8-A938-66D6BF48178E - c7557eb8cd703432"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PubaliAuthenticator.SplashViewController.showLoginScreen() -&gt; ()"
+                  moduleName = "PubaliAuthenticator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pblsdd-mac3/Documents/IOS%20Project/PubaliAuthenticator/PubaliAuthenticator/Splash/SplashViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "606EF981-EBBC-4B8A-8A18-21C80FAD95D3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubaliAuthenticator/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "requestDevice()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "606EF981-EBBC-4B8A-8A18-21C80FAD95D3 - 3add50365732b0e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PubaliAuthenticator.LoginViewController.requestDevice() -&gt; ()"
+                  moduleName = "PubaliAuthenticator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pblsdd-mac3/Documents/IOS%20Project/PubaliAuthenticator/PubaliAuthenticator/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "2244">
+               </Location>
+               <Location
+                  uuid = "606EF981-EBBC-4B8A-8A18-21C80FAD95D3 - 3add50365732b0e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PubaliAuthenticator.LoginViewController.requestDevice() -&gt; ()"
+                  moduleName = "PubaliAuthenticator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pblsdd-mac3/Documents/IOS%20Project/PubaliAuthenticator/PubaliAuthenticator/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "2252">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "929EB62B-E020-4C3C-AC91-AF2CDA0AF2CD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubaliAuthenticator/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "requestDevice()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3B4BD558-5A6D-4CC3-A688-4716F5057877"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubaliAuthenticator/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "requestDevice()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "3B4BD558-5A6D-4CC3-A688-4716F5057877 - a66dbdbb170ad76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in PubaliAuthenticator.LoginViewController.requestDevice() -&gt; ()"
+                  moduleName = "PubaliAuthenticator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pblsdd-mac3/Documents/IOS%20Project/PubaliAuthenticator/PubaliAuthenticator/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "384">
+               </Location>
+               <Location
+                  uuid = "3B4BD558-5A6D-4CC3-A688-4716F5057877 - a66dbdbb170ad76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in PubaliAuthenticator.LoginViewController.requestDevice() -&gt; ()"
+                  moduleName = "PubaliAuthenticator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pblsdd-mac3/Documents/IOS%20Project/PubaliAuthenticator/PubaliAuthenticator/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "480">
+               </Location>
+               <Location
+                  uuid = "3B4BD558-5A6D-4CC3-A688-4716F5057877 - 3add50365732ba6b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PubaliAuthenticator.LoginViewController.requestDevice() -&gt; ()"
+                  moduleName = "PubaliAuthenticator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pblsdd-mac3/Documents/IOS%20Project/PubaliAuthenticator/PubaliAuthenticator/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "3136">
+               </Location>
+               <Location
+                  uuid = "3B4BD558-5A6D-4CC3-A688-4716F5057877 - a66dbdbb170ad76"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in PubaliAuthenticator.LoginViewController.requestDevice() -&gt; ()"
+                  moduleName = "PubaliAuthenticator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pblsdd-mac3/Documents/IOS%20Project/PubaliAuthenticator/PubaliAuthenticator/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "86"
+                  endingLineNumber = "86"
+                  offsetFromSymbolStart = "372">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0D7F1C19-70AF-431E-BFF5-6B1505F59F49"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubaliAuthenticator/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "90"
+            endingLineNumber = "90"
+            landmarkName = "requestDevice()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "0D7F1C19-70AF-431E-BFF5-6B1505F59F49 - a66dbdbb170adac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in PubaliAuthenticator.LoginViewController.requestDevice() -&gt; ()"
+                  moduleName = "PubaliAuthenticator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pblsdd-mac3/Documents/IOS%20Project/PubaliAuthenticator/PubaliAuthenticator/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "1068">
+               </Location>
+               <Location
+                  uuid = "0D7F1C19-70AF-431E-BFF5-6B1505F59F49 - a66dbdbb170adac"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in PubaliAuthenticator.LoginViewController.requestDevice() -&gt; ()"
+                  moduleName = "PubaliAuthenticator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pblsdd-mac3/Documents/IOS%20Project/PubaliAuthenticator/PubaliAuthenticator/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "92"
+                  endingLineNumber = "92"
+                  offsetFromSymbolStart = "424">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A21C120E-43C4-4125-88A1-44B1C02CF190"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubaliAuthenticator/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "requestDevice()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A21C120E-43C4-4125-88A1-44B1C02CF190 - 3add50365732bff8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PubaliAuthenticator.LoginViewController.requestDevice() -&gt; ()"
+                  moduleName = "PubaliAuthenticator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pblsdd-mac3/Documents/IOS%20Project/PubaliAuthenticator/PubaliAuthenticator/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "3580">
+               </Location>
+               <Location
+                  uuid = "A21C120E-43C4-4125-88A1-44B1C02CF190 - 3add50365732bff8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PubaliAuthenticator.LoginViewController.requestDevice() -&gt; ()"
+                  moduleName = "PubaliAuthenticator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pblsdd-mac3/Documents/IOS%20Project/PubaliAuthenticator/PubaliAuthenticator/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "67"
+                  endingLineNumber = "67"
+                  offsetFromSymbolStart = "2680">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "248E9959-0267-41CC-AD3A-4DAC95F6D102"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
+            landmarkName = "requestOTP()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FEEF5054-C975-4B8E-BBA2-295A94701EF8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "212"
+            endingLineNumber = "212"
+            landmarkName = "requestOTP()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6BCF8236-1326-4731-9A7B-DB09DE817F93"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "241"
+            endingLineNumber = "241"
+            landmarkName = "startProgressBar()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "6BCF8236-1326-4731-9A7B-DB09DE817F93 - 6899709307acebd0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PubaliAuthenticator.ImageLabel.__allocating_init(frame: __C.CGRect) -&gt; PubaliAuthenticator.ImageLabel"
+                  moduleName = "PubaliAuthenticator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pblsdd-mac3/Documents/IOS%20Project/PubaliAuthenticator/PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "32">
+               </Location>
+               <Location
+                  uuid = "6BCF8236-1326-4731-9A7B-DB09DE817F93 - c30c504a00a95f0a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PubaliAuthenticator.ImageLabel.init(frame: __C.CGRect) -&gt; PubaliAuthenticator.ImageLabel"
+                  moduleName = "PubaliAuthenticator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pblsdd-mac3/Documents/IOS%20Project/PubaliAuthenticator/PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "216"
+                  endingLineNumber = "216"
+                  offsetFromSymbolStart = "92">
+               </Location>
+               <Location
+                  uuid = "6BCF8236-1326-4731-9A7B-DB09DE817F93 - 46872905de4384e3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PubaliAuthenticator.ImageLabel.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;PubaliAuthenticator.ImageLabel&gt;"
+                  moduleName = "PubaliAuthenticator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pblsdd-mac3/Documents/IOS%20Project/PubaliAuthenticator/PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "6BCF8236-1326-4731-9A7B-DB09DE817F93 - 5968016675c94e0c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PubaliAuthenticator.ImageLabel.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;PubaliAuthenticator.ImageLabel&gt;"
+                  moduleName = "PubaliAuthenticator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pblsdd-mac3/Documents/IOS%20Project/PubaliAuthenticator/PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "216"
+                  endingLineNumber = "216"
+                  offsetFromSymbolStart = "64">
+               </Location>
+               <Location
+                  uuid = "6BCF8236-1326-4731-9A7B-DB09DE817F93 - c5b3a1157d42a95a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PubaliAuthenticator.ImageLabel.__deallocating_deinit"
+                  moduleName = "PubaliAuthenticator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pblsdd-mac3/Documents/IOS%20Project/PubaliAuthenticator/PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  uuid = "6BCF8236-1326-4731-9A7B-DB09DE817F93 - 14741c76b6234764"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PubaliAuthenticator.OTPGenerateViewController.startProgressBar() -&gt; ()"
+                  moduleName = "PubaliAuthenticator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pblsdd-mac3/Documents/IOS%20Project/PubaliAuthenticator/PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "214"
+                  endingLineNumber = "214"
+                  offsetFromSymbolStart = "196">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D51F29C3-E99E-4E21-9039-067125AC9970"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "203"
+            endingLineNumber = "203"
+            landmarkName = "requestOTP()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "55769FF0-3148-4D4B-931B-11499649C1BC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubaliAuthenticator/LoginViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "112"
+            endingLineNumber = "112"
+            landmarkName = "requestDevice()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "55769FF0-3148-4D4B-931B-11499649C1BC - a66dbdbb170ae7f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in PubaliAuthenticator.LoginViewController.requestDevice() -&gt; ()"
+                  moduleName = "PubaliAuthenticator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pblsdd-mac3/Documents/IOS%20Project/PubaliAuthenticator/PubaliAuthenticator/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "109"
+                  endingLineNumber = "109"
+                  offsetFromSymbolStart = "2608">
+               </Location>
+               <Location
+                  uuid = "55769FF0-3148-4D4B-931B-11499649C1BC - bbd8c8db105da385"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in PubaliAuthenticator.LoginViewController.requestDevice() -&gt; ()"
+                  moduleName = "PubaliAuthenticator"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pblsdd-mac3/Documents/IOS%20Project/PubaliAuthenticator/PubaliAuthenticator/LoginViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "108"
+                  endingLineNumber = "108"
+                  offsetFromSymbolStart = "268">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "34A296C4-914E-4566-879F-BB24B8C485E0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "133"
+            endingLineNumber = "133"
+            landmarkName = "requestOTP()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A1E87109-483C-416A-AEE5-836A939F6D81"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
+            landmarkName = "requestOTP()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AE66F5A4-8A4E-4B9F-A41D-8B9C480B7D52"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "206"
+            endingLineNumber = "206"
+            landmarkName = "requestOTP()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1477D011-0C16-42F0-A4CE-89995ACE1737"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "timerFired()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

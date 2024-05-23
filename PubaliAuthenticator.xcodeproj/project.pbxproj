@@ -1,0 +1,852 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		61F1AEF55573F9AD9FEEF351 /* Pods_PubaliAuthenticator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F05F37598E3E704DC9D54FE /* Pods_PubaliAuthenticator.framework */; };
+		AF4E1DEF2BA2E81500805122 /* BioMetricViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF4E1DEE2BA2E81500805122 /* BioMetricViewController.swift */; };
+		AF5A9DC92BB92F310095F780 /* generate.json in Resources */ = {isa = PBXBuildFile; fileRef = AF5A9DC72BB92F310095F780 /* generate.json */; };
+		AF5A9DCA2BB92F310095F780 /* loading.json in Resources */ = {isa = PBXBuildFile; fileRef = AF5A9DC82BB92F310095F780 /* loading.json */; };
+		AF5B1E4D2BA2C23600D44F9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5B1E4C2BA2C23600D44F9A /* AppDelegate.swift */; };
+		AF5B1E4F2BA2C23600D44F9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5B1E4E2BA2C23600D44F9A /* SceneDelegate.swift */; };
+		AF5B1E512BA2C23600D44F9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5B1E502BA2C23600D44F9A /* ViewController.swift */; };
+		AF5B1E542BA2C23600D44F9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5B1E522BA2C23600D44F9A /* Main.storyboard */; };
+		AF5B1E562BA2C23800D44F9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF5B1E552BA2C23800D44F9A /* Assets.xcassets */; };
+		AF5B1E592BA2C23800D44F9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF5B1E572BA2C23800D44F9A /* LaunchScreen.storyboard */; };
+		AF5B1E642BA2C23800D44F9A /* PubaliAuthenticatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5B1E632BA2C23800D44F9A /* PubaliAuthenticatorTests.swift */; };
+		AF5B1E6E2BA2C23800D44F9A /* PubaliAuthenticatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5B1E6D2BA2C23800D44F9A /* PubaliAuthenticatorUITests.swift */; };
+		AF5B1E702BA2C23800D44F9A /* PubaliAuthenticatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5B1E6F2BA2C23800D44F9A /* PubaliAuthenticatorUITestsLaunchTests.swift */; };
+		AF5B1E7E2BA2C29A00D44F9A /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5B1E7D2BA2C29A00D44F9A /* SplashViewController.swift */; };
+		AF5B1E802BA2C2EB00D44F9A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5B1E7F2BA2C2EB00D44F9A /* LoginViewController.swift */; };
+		AF9BF7482BB3F97D00689EBE /* DeviceRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9BF7472BB3F97D00689EBE /* DeviceRegistration.swift */; };
+		AFBBCF302BA2FEEE0069C8D3 /* OTPGenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBBCF2F2BA2FEEE0069C8D3 /* OTPGenerateViewController.swift */; };
+		C3B665AC2BDF4D4A00F4C3DE /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6659F2BDF4D4A00F4C3DE /* SplashViewController.swift */; };
+		C3B665B02BDF4D4A00F4C3DE /* DeviceRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B665A52BDF4D4A00F4C3DE /* DeviceRegistration.swift */; };
+		C3B665B12BDF4D4A00F4C3DE /* OTPGenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B665A72BDF4D4A00F4C3DE /* OTPGenerateViewController.swift */; };
+		C3B665B22BDF4D4A00F4C3DE /* BioMetricViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B665A92BDF4D4A00F4C3DE /* BioMetricViewController.swift */; };
+		C3B665BA2BDF54D800F4C3DE /* AllURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B665B62BDF54D800F4C3DE /* AllURL.swift */; };
+		C3B665BB2BDF54D800F4C3DE /* UI+ExViewControll.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B665B72BDF54D800F4C3DE /* UI+ExViewControll.swift */; };
+		C3B665BC2BDF54D800F4C3DE /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B665B82BDF54D800F4C3DE /* Utility.swift */; };
+		C3B802752BE107E70097BE0F /* BioTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B802742BE107E70097BE0F /* BioTestViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF5B1E602BA2C23800D44F9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF5B1E412BA2C23600D44F9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF5B1E482BA2C23600D44F9A;
+			remoteInfo = PubaliAuthenticator;
+		};
+		AF5B1E6A2BA2C23800D44F9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF5B1E412BA2C23600D44F9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF5B1E482BA2C23600D44F9A;
+			remoteInfo = PubaliAuthenticator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0851CAD2D98E8C615E81690C /* Pods-PubaliAuthenticator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PubaliAuthenticator.debug.xcconfig"; path = "Target Support Files/Pods-PubaliAuthenticator/Pods-PubaliAuthenticator.debug.xcconfig"; sourceTree = "<group>"; };
+		1F05F37598E3E704DC9D54FE /* Pods_PubaliAuthenticator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PubaliAuthenticator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95ED90715B09632FDDAE8C0A /* Pods-PubaliAuthenticator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PubaliAuthenticator.release.xcconfig"; path = "Target Support Files/Pods-PubaliAuthenticator/Pods-PubaliAuthenticator.release.xcconfig"; sourceTree = "<group>"; };
+		AF4E1DEE2BA2E81500805122 /* BioMetricViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioMetricViewController.swift; sourceTree = "<group>"; };
+		AF5A9DC72BB92F310095F780 /* generate.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = generate.json; sourceTree = "<group>"; };
+		AF5A9DC82BB92F310095F780 /* loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading.json; sourceTree = "<group>"; };
+		AF5B1E492BA2C23600D44F9A /* PubaliAuthenticator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PubaliAuthenticator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF5B1E4C2BA2C23600D44F9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AF5B1E4E2BA2C23600D44F9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		AF5B1E502BA2C23600D44F9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		AF5B1E532BA2C23600D44F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AF5B1E552BA2C23800D44F9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AF5B1E582BA2C23800D44F9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AF5B1E5A2BA2C23800D44F9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AF5B1E5F2BA2C23800D44F9A /* PubaliAuthenticatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PubaliAuthenticatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF5B1E632BA2C23800D44F9A /* PubaliAuthenticatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubaliAuthenticatorTests.swift; sourceTree = "<group>"; };
+		AF5B1E692BA2C23800D44F9A /* PubaliAuthenticatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PubaliAuthenticatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF5B1E6D2BA2C23800D44F9A /* PubaliAuthenticatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubaliAuthenticatorUITests.swift; sourceTree = "<group>"; };
+		AF5B1E6F2BA2C23800D44F9A /* PubaliAuthenticatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PubaliAuthenticatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AF5B1E7D2BA2C29A00D44F9A /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		AF5B1E7F2BA2C2EB00D44F9A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AF9BF7472BB3F97D00689EBE /* DeviceRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRegistration.swift; sourceTree = "<group>"; };
+		AFBBCF2F2BA2FEEE0069C8D3 /* OTPGenerateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPGenerateViewController.swift; sourceTree = "<group>"; };
+		C3B6659F2BDF4D4A00F4C3DE /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		C3B665A52BDF4D4A00F4C3DE /* DeviceRegistration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceRegistration.swift; sourceTree = "<group>"; };
+		C3B665A72BDF4D4A00F4C3DE /* OTPGenerateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPGenerateViewController.swift; sourceTree = "<group>"; };
+		C3B665A92BDF4D4A00F4C3DE /* BioMetricViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BioMetricViewController.swift; sourceTree = "<group>"; };
+		C3B665B62BDF54D800F4C3DE /* AllURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AllURL.swift; sourceTree = "<group>"; };
+		C3B665B72BDF54D800F4C3DE /* UI+ExViewControll.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UI+ExViewControll.swift"; sourceTree = "<group>"; };
+		C3B665B82BDF54D800F4C3DE /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		C3B802742BE107E70097BE0F /* BioTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioTestViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF5B1E462BA2C23600D44F9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				61F1AEF55573F9AD9FEEF351 /* Pods_PubaliAuthenticator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF5B1E5C2BA2C23800D44F9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF5B1E662BA2C23800D44F9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		23A5A121FA8563336D038651 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0851CAD2D98E8C615E81690C /* Pods-PubaliAuthenticator.debug.xcconfig */,
+				95ED90715B09632FDDAE8C0A /* Pods-PubaliAuthenticator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5BF7BDBB54AD875F4C212780 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F05F37598E3E704DC9D54FE /* Pods_PubaliAuthenticator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AF5B1E402BA2C23600D44F9A = {
+			isa = PBXGroup;
+			children = (
+				AF5B1E4B2BA2C23600D44F9A /* PubaliAuthenticator */,
+				AF5B1E622BA2C23800D44F9A /* PubaliAuthenticatorTests */,
+				AF5B1E6C2BA2C23800D44F9A /* PubaliAuthenticatorUITests */,
+				AF5B1E4A2BA2C23600D44F9A /* Products */,
+				23A5A121FA8563336D038651 /* Pods */,
+				5BF7BDBB54AD875F4C212780 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AF5B1E4A2BA2C23600D44F9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AF5B1E492BA2C23600D44F9A /* PubaliAuthenticator.app */,
+				AF5B1E5F2BA2C23800D44F9A /* PubaliAuthenticatorTests.xctest */,
+				AF5B1E692BA2C23800D44F9A /* PubaliAuthenticatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AF5B1E4B2BA2C23600D44F9A /* PubaliAuthenticator */ = {
+			isa = PBXGroup;
+			children = (
+				C3B665B92BDF54D800F4C3DE /* Constant */,
+				C3B665AA2BDF4D4A00F4C3DE /* Biometric */,
+				C3B808402BD8FA590096813F /* Utility */,
+				C3B665A62BDF4D4A00F4C3DE /* Model */,
+				C3B665A82BDF4D4A00F4C3DE /* OTPShow */,
+				C3B665A02BDF4D4A00F4C3DE /* Splash */,
+				C3B665AB2BDF4D4A00F4C3DE /* Utility */,
+				AF5A9DC72BB92F310095F780 /* generate.json */,
+				AF5A9DC82BB92F310095F780 /* loading.json */,
+				AF9BF7462BB3F95400689EBE /* Model */,
+				AF5BA4BA2BA2CE1A0057821A /* Biometric */,
+				AF5BA4B92BA2CD330057821A /* OTPShow */,
+				AF5B1E7C2BA2C28900D44F9A /* Splash */,
+				AF5B1E4C2BA2C23600D44F9A /* AppDelegate.swift */,
+				AF5B1E4E2BA2C23600D44F9A /* SceneDelegate.swift */,
+				AF5B1E502BA2C23600D44F9A /* ViewController.swift */,
+				AF5B1E522BA2C23600D44F9A /* Main.storyboard */,
+				AF5B1E552BA2C23800D44F9A /* Assets.xcassets */,
+				AF5B1E572BA2C23800D44F9A /* LaunchScreen.storyboard */,
+				AF5B1E5A2BA2C23800D44F9A /* Info.plist */,
+				AF5B1E7F2BA2C2EB00D44F9A /* LoginViewController.swift */,
+				C3B802742BE107E70097BE0F /* BioTestViewController.swift */,
+			);
+			path = PubaliAuthenticator;
+			sourceTree = "<group>";
+		};
+		AF5B1E622BA2C23800D44F9A /* PubaliAuthenticatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				AF5B1E632BA2C23800D44F9A /* PubaliAuthenticatorTests.swift */,
+			);
+			path = PubaliAuthenticatorTests;
+			sourceTree = "<group>";
+		};
+		AF5B1E6C2BA2C23800D44F9A /* PubaliAuthenticatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AF5B1E6D2BA2C23800D44F9A /* PubaliAuthenticatorUITests.swift */,
+				AF5B1E6F2BA2C23800D44F9A /* PubaliAuthenticatorUITestsLaunchTests.swift */,
+			);
+			path = PubaliAuthenticatorUITests;
+			sourceTree = "<group>";
+		};
+		AF5B1E7C2BA2C28900D44F9A /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				AF5B1E7D2BA2C29A00D44F9A /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		AF5BA4B92BA2CD330057821A /* OTPShow */ = {
+			isa = PBXGroup;
+			children = (
+				AFBBCF2F2BA2FEEE0069C8D3 /* OTPGenerateViewController.swift */,
+			);
+			path = OTPShow;
+			sourceTree = "<group>";
+		};
+		AF5BA4BA2BA2CE1A0057821A /* Biometric */ = {
+			isa = PBXGroup;
+			children = (
+				AF4E1DEE2BA2E81500805122 /* BioMetricViewController.swift */,
+			);
+			path = Biometric;
+			sourceTree = "<group>";
+		};
+		AF9BF7462BB3F95400689EBE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AF9BF7472BB3F97D00689EBE /* DeviceRegistration.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3B665A02BDF4D4A00F4C3DE /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				C3B6659F2BDF4D4A00F4C3DE /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		C3B665A62BDF4D4A00F4C3DE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C3B665A52BDF4D4A00F4C3DE /* DeviceRegistration.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C3B665A82BDF4D4A00F4C3DE /* OTPShow */ = {
+			isa = PBXGroup;
+			children = (
+				C3B665A72BDF4D4A00F4C3DE /* OTPGenerateViewController.swift */,
+			);
+			path = OTPShow;
+			sourceTree = "<group>";
+		};
+		C3B665AA2BDF4D4A00F4C3DE /* Biometric */ = {
+			isa = PBXGroup;
+			children = (
+				C3B665A92BDF4D4A00F4C3DE /* BioMetricViewController.swift */,
+			);
+			path = Biometric;
+			sourceTree = "<group>";
+		};
+		C3B665AB2BDF4D4A00F4C3DE /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		C3B665B92BDF54D800F4C3DE /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				C3B665B62BDF54D800F4C3DE /* AllURL.swift */,
+				C3B665B72BDF54D800F4C3DE /* UI+ExViewControll.swift */,
+				C3B665B82BDF54D800F4C3DE /* Utility.swift */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		C3B808402BD8FA590096813F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AF5B1E482BA2C23600D44F9A /* PubaliAuthenticator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF5B1E732BA2C23800D44F9A /* Build configuration list for PBXNativeTarget "PubaliAuthenticator" */;
+			buildPhases = (
+				9FAA418832C047912FED8751 /* [CP] Check Pods Manifest.lock */,
+				AF5B1E452BA2C23600D44F9A /* Sources */,
+				AF5B1E462BA2C23600D44F9A /* Frameworks */,
+				AF5B1E472BA2C23600D44F9A /* Resources */,
+				33556F3C52ED676F0FB14176 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PubaliAuthenticator;
+			productName = PubaliAuthenticator;
+			productReference = AF5B1E492BA2C23600D44F9A /* PubaliAuthenticator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AF5B1E5E2BA2C23800D44F9A /* PubaliAuthenticatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF5B1E762BA2C23800D44F9A /* Build configuration list for PBXNativeTarget "PubaliAuthenticatorTests" */;
+			buildPhases = (
+				AF5B1E5B2BA2C23800D44F9A /* Sources */,
+				AF5B1E5C2BA2C23800D44F9A /* Frameworks */,
+				AF5B1E5D2BA2C23800D44F9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF5B1E612BA2C23800D44F9A /* PBXTargetDependency */,
+			);
+			name = PubaliAuthenticatorTests;
+			productName = PubaliAuthenticatorTests;
+			productReference = AF5B1E5F2BA2C23800D44F9A /* PubaliAuthenticatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AF5B1E682BA2C23800D44F9A /* PubaliAuthenticatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF5B1E792BA2C23800D44F9A /* Build configuration list for PBXNativeTarget "PubaliAuthenticatorUITests" */;
+			buildPhases = (
+				AF5B1E652BA2C23800D44F9A /* Sources */,
+				AF5B1E662BA2C23800D44F9A /* Frameworks */,
+				AF5B1E672BA2C23800D44F9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF5B1E6B2BA2C23800D44F9A /* PBXTargetDependency */,
+			);
+			name = PubaliAuthenticatorUITests;
+			productName = PubaliAuthenticatorUITests;
+			productReference = AF5B1E692BA2C23800D44F9A /* PubaliAuthenticatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AF5B1E412BA2C23600D44F9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AF5B1E482BA2C23600D44F9A = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					AF5B1E5E2BA2C23800D44F9A = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = AF5B1E482BA2C23600D44F9A;
+					};
+					AF5B1E682BA2C23800D44F9A = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = AF5B1E482BA2C23600D44F9A;
+					};
+				};
+			};
+			buildConfigurationList = AF5B1E442BA2C23600D44F9A /* Build configuration list for PBXProject "PubaliAuthenticator" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AF5B1E402BA2C23600D44F9A;
+			packageReferences = (
+				C3B808432BD8FD150096813F /* XCRemoteSwiftPackageReference "swift-crypto" */,
+			);
+			productRefGroup = AF5B1E4A2BA2C23600D44F9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AF5B1E482BA2C23600D44F9A /* PubaliAuthenticator */,
+				AF5B1E5E2BA2C23800D44F9A /* PubaliAuthenticatorTests */,
+				AF5B1E682BA2C23800D44F9A /* PubaliAuthenticatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AF5B1E472BA2C23600D44F9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5A9DC92BB92F310095F780 /* generate.json in Resources */,
+				AF5B1E592BA2C23800D44F9A /* LaunchScreen.storyboard in Resources */,
+				AF5B1E562BA2C23800D44F9A /* Assets.xcassets in Resources */,
+				AF5B1E542BA2C23600D44F9A /* Main.storyboard in Resources */,
+				AF5A9DCA2BB92F310095F780 /* loading.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF5B1E5D2BA2C23800D44F9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF5B1E672BA2C23800D44F9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33556F3C52ED676F0FB14176 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PubaliAuthenticator/Pods-PubaliAuthenticator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PubaliAuthenticator/Pods-PubaliAuthenticator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PubaliAuthenticator/Pods-PubaliAuthenticator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FAA418832C047912FED8751 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PubaliAuthenticator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AF5B1E452BA2C23600D44F9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3B665BB2BDF54D800F4C3DE /* UI+ExViewControll.swift in Sources */,
+				C3B665B22BDF4D4A00F4C3DE /* BioMetricViewController.swift in Sources */,
+				C3B665BA2BDF54D800F4C3DE /* AllURL.swift in Sources */,
+				C3B665B12BDF4D4A00F4C3DE /* OTPGenerateViewController.swift in Sources */,
+				AF5B1E512BA2C23600D44F9A /* ViewController.swift in Sources */,
+				C3B665BC2BDF54D800F4C3DE /* Utility.swift in Sources */,
+				C3B665B02BDF4D4A00F4C3DE /* DeviceRegistration.swift in Sources */,
+				AF5B1E4D2BA2C23600D44F9A /* AppDelegate.swift in Sources */,
+				AF4E1DEF2BA2E81500805122 /* BioMetricViewController.swift in Sources */,
+				AF5B1E4F2BA2C23600D44F9A /* SceneDelegate.swift in Sources */,
+				AF5B1E802BA2C2EB00D44F9A /* LoginViewController.swift in Sources */,
+				C3B665AC2BDF4D4A00F4C3DE /* SplashViewController.swift in Sources */,
+				AF5B1E7E2BA2C29A00D44F9A /* SplashViewController.swift in Sources */,
+				AF9BF7482BB3F97D00689EBE /* DeviceRegistration.swift in Sources */,
+				AFBBCF302BA2FEEE0069C8D3 /* OTPGenerateViewController.swift in Sources */,
+				C3B802752BE107E70097BE0F /* BioTestViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF5B1E5B2BA2C23800D44F9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5B1E642BA2C23800D44F9A /* PubaliAuthenticatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF5B1E652BA2C23800D44F9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF5B1E6E2BA2C23800D44F9A /* PubaliAuthenticatorUITests.swift in Sources */,
+				AF5B1E702BA2C23800D44F9A /* PubaliAuthenticatorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF5B1E612BA2C23800D44F9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF5B1E482BA2C23600D44F9A /* PubaliAuthenticator */;
+			targetProxy = AF5B1E602BA2C23800D44F9A /* PBXContainerItemProxy */;
+		};
+		AF5B1E6B2BA2C23800D44F9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF5B1E482BA2C23600D44F9A /* PubaliAuthenticator */;
+			targetProxy = AF5B1E6A2BA2C23800D44F9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AF5B1E522BA2C23600D44F9A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF5B1E532BA2C23600D44F9A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AF5B1E572BA2C23800D44F9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AF5B1E582BA2C23800D44F9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AF5B1E712BA2C23800D44F9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AF5B1E722BA2C23800D44F9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AF5B1E742BA2C23800D44F9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0851CAD2D98E8C615E81690C /* Pods-PubaliAuthenticator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tuhin Chowdhury (YMBUS8C5R5)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 84Z5QJ33P2;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PubaliAuthenticator/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "To Open Viewcontroller need User authentication";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pubalibankbd.pibanking.totp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "PI TOTP Dev";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AF5B1E752BA2C23800D44F9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95ED90715B09632FDDAE8C0A /* Pods-PubaliAuthenticator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tuhin Chowdhury (YMBUS8C5R5)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 84Z5QJ33P2;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PubaliAuthenticator/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "To Open Viewcontroller need User authentication";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.pubalibankbd.pibanking.totp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "PI TOTP Dev";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF5B1E772BA2C23800D44F9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pubalibank.PubaliAuthenticatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PubaliAuthenticator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PubaliAuthenticator";
+			};
+			name = Debug;
+		};
+		AF5B1E782BA2C23800D44F9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pubalibank.PubaliAuthenticatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PubaliAuthenticator.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PubaliAuthenticator";
+			};
+			name = Release;
+		};
+		AF5B1E7A2BA2C23800D44F9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pubalibank.PubaliAuthenticatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PubaliAuthenticator;
+			};
+			name = Debug;
+		};
+		AF5B1E7B2BA2C23800D44F9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Pubalibank.PubaliAuthenticatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PubaliAuthenticator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AF5B1E442BA2C23600D44F9A /* Build configuration list for PBXProject "PubaliAuthenticator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5B1E712BA2C23800D44F9A /* Debug */,
+				AF5B1E722BA2C23800D44F9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF5B1E732BA2C23800D44F9A /* Build configuration list for PBXNativeTarget "PubaliAuthenticator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5B1E742BA2C23800D44F9A /* Debug */,
+				AF5B1E752BA2C23800D44F9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF5B1E762BA2C23800D44F9A /* Build configuration list for PBXNativeTarget "PubaliAuthenticatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5B1E772BA2C23800D44F9A /* Debug */,
+				AF5B1E782BA2C23800D44F9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AF5B1E792BA2C23800D44F9A /* Build configuration list for PBXNativeTarget "PubaliAuthenticatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF5B1E7A2BA2C23800D44F9A /* Debug */,
+				AF5B1E7B2BA2C23800D44F9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C3B808432BD8FD150096813F /* XCRemoteSwiftPackageReference "swift-crypto" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-crypto.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+	};
+	rootObject = AF5B1E412BA2C23600D44F9A /* Project object */;
+}

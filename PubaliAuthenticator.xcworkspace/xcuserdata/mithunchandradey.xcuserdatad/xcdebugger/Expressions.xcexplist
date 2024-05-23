@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in OTPGenerateViewController.requestOTP():OTPGenerateViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "instanceID">
+            </PersistentString>
+            <PersistentString
+               value = "authBearerToken">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OTPGenerateViewController.viewDidLoad():OTPGenerateViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "instanceID">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "OTPGenerateViewController.requestOTP():OTPGenerateViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "hmackEncrString">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "LoginViewController.requestDevice():LoginViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "hmackEncrString">
+            </PersistentString>
+            <PersistentString
+               value = "activationcode">
+            </PersistentString>
+            <PersistentString
+               value = "etCode.text">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in OTPGenerateViewController.requestOTP():OTPGenerateViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "responseFinal">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
