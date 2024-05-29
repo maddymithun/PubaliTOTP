@@ -49,7 +49,7 @@ class LoginViewController: UIViewController {
             hmackEncrString = self.getHMACKShohozString(str: hmackInputString)
             processing()
             let requestDetails = DeviceRequest(
-                baseurl: "https://172.16.254.113/CorporateBankingApiTEST",
+                baseurl: AllURL.MIDWAREURL,
                 apiendpoint: "cib/api/v1/Auth/deviceregistration",
                 method: "POST",
                 apicode: "B24TOTP101",

@@ -13,5 +13,6 @@ class AllURL{
     static let  ENCKEY : String =  "tuqwojtweo5784306749ghl"
     static let specificKeyHex = "00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff"
     static let specificIvHex = "00112233445566778899aabbccddeeff" 
+    static let MIDWAREURL="https://172.16.254.113/CorporateBankingApiTEST"
 }
 

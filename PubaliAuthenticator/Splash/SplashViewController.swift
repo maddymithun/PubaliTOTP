@@ -40,15 +40,15 @@ class SplashViewController: UIViewController {
             var hmackTokenValue = "\("PICB")\("TOTP")\("IOS")\("picbtotp2024")\("dibakar:feni1992")"
            var hmackEncrStringToken = self.getHMACKShohozString(str: hmackTokenValue)
             let requestDetails = AccessTokenRequest(
-                      baseUrl: "https://172.16.254.113/CorporateBankingApiTEST",
-                      apiEndpoint: "cib/api/v1/Auth/gentotpaccesstoken",
-                      method: "get",
-                      apiCode: "B24TOTP100",
-                      HeaderKeyVal: [
+                baseUrl: AllURL.MIDWAREURL,
+                apiEndpoint: "cib/api/v1/Auth/gentotpaccesstoken",
+                method: "get",
+                apiCode: "B24TOTP100",
+                HeaderKeyVal: [
                           HeaderKeyVal(headerKey: "Content-Type", headerVal: "application/json"),
                           HeaderKeyVal(headerKey: "x-api-key", headerVal: "sdsf3vhvpq9865sjgdjh656hsg##")
                       ],
-                      bodyObject: AccessTokenRequestBody(
+                bodyObject: AccessTokenRequestBody(
                           product: "PICB",
                           modulename: "TOTP",
                           platform: "IOS",

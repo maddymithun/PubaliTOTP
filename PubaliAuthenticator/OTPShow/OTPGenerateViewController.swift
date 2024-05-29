@@ -121,6 +121,7 @@ class OTPGenerateViewController: UIViewController {
             let otpText = lbOTP.text ?? ""
             print("Label Text: \(otpText)")
             Utility.show(message: "Copy..", controller: self)
+            UIPasteboard.general.string = lbOTP.text
         }
     }
     @objc func requestOTP(){
@@ -138,7 +139,7 @@ class OTPGenerateViewController: UIViewController {
                     self.processing()
                 }
                 let requestDetails = TOTPRequest(
-                    baseurl:"https://172.16.254.113/CorporateBankingApiTEST",
+                    baseurl:AllURL.MIDWAREURL,
                     apiendpoint: "cib/api/v1/Auth/generatelogintotp",
                     method: "POST",
                     apicode: "B24TOTP102",
@@ -303,7 +304,7 @@ class OTPGenerateViewController: UIViewController {
                   let seconds = currentSeconds % 60
                   
                   lbTimer.text = String(format: "%d:%02d", minutes, seconds)
-                  
+                  lbTimer.textColor=UIColor.systemGreen
                   // Calculate progress as a fraction of total time
                   let progress = Float(currentSeconds) / Float(totalSeconds)
                   progressView.progress = progress
@@ -311,6 +312,7 @@ class OTPGenerateViewController: UIViewController {
               } else {
                   countdownTimer?.invalidate() // Stop the timer
                   countdownTimer = nil
+                  lbTimer.textColor=UIColor.black
                   lbTimer.text = "0:00" // Display the end of the timer
                   progressView.progress = 0.0 // Indicate that the progress is complete
                   EndOTPFromAPIDesign()
