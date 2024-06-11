@@ -180,4 +180,21 @@ class BioMetricViewController: UIViewController {
             completion(false, error)
         }
     }
+    func loadFromKeychain(forKey key: String) -> Data? {
+        let query: [String: Any] = [
+            kSecClass as String: kSecClassGenericPassword,
+            kSecAttrAccount as String: key,
+            kSecReturnData as String: kCFBooleanTrue!,
+            kSecMatchLimit as String: kSecMatchLimitOne
+        ]
+        
+        var dataTypeRef: AnyObject? = nil
+        let status = SecItemCopyMatching(query as CFDictionary, &dataTypeRef)
+        if status == errSecSuccess {
+            return dataTypeRef as? Data
+        } else {
+            return nil
+        }
+    }
+
 }

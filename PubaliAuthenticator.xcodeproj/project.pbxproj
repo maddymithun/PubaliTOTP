@@ -153,6 +153,7 @@
 		AF5B1E4B2BA2C23600D44F9A /* PubaliAuthenticator */ = {
 			isa = PBXGroup;
 			children = (
+				C3125DE12C085781001A4780 /* image */,
 				C3B665B92BDF54D800F4C3DE /* Constant */,
 				C3B665AA2BDF4D4A00F4C3DE /* Biometric */,
 				C3B808402BD8FA590096813F /* Utility */,
@@ -226,6 +227,13 @@
 				AF9BF7472BB3F97D00689EBE /* DeviceRegistration.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		C3125DE12C085781001A4780 /* image */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = image;
 			sourceTree = "<group>";
 		};
 		C3B665A02BDF4D4A00F4C3DE /* Splash */ = {

@@ -190,8 +190,8 @@
             filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "122"
+            endingLineNumber = "122"
             landmarkName = "requestOTP()"
             landmarkType = "7">
          </BreakpointContent>
@@ -200,7 +200,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "741734BF-0AEB-4EA5-A2CA-18CC4D1827C8"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PubaliAuthenticator/Splash/SplashViewController.swift"
@@ -238,8 +238,8 @@
             filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "137"
-            endingLineNumber = "137"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "requestOTP()"
             landmarkType = "7">
          </BreakpointContent>
@@ -270,8 +270,8 @@
             filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "220"
-            endingLineNumber = "220"
+            startingLineNumber = "208"
+            endingLineNumber = "208"
             landmarkName = "requestOTP()"
             landmarkType = "7">
          </BreakpointContent>
@@ -296,7 +296,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "C0D4BE44-EF3F-4601-98FB-429A12A88499"
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PubaliAuthenticator/Splash/SplashViewController.swift"
@@ -318,9 +318,9 @@
             filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
-            landmarkName = "requestOTP()"
+            startingLineNumber = "115"
+            endingLineNumber = "115"
+            landmarkName = "copyTapped(sender:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -334,10 +334,10 @@
             filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "392"
-            endingLineNumber = "392"
-            landmarkName = "OTPGenerateViewController"
-            landmarkType = "3">
+            startingLineNumber = "401"
+            endingLineNumber = "401"
+            landmarkName = "stopLoadingAnimation()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -350,10 +350,10 @@
             filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "393"
-            endingLineNumber = "393"
-            landmarkName = "accessTokenGen()"
-            landmarkType = "7">
+            startingLineNumber = "402"
+            endingLineNumber = "402"
+            landmarkName = "OTPGenerateViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -382,8 +382,8 @@
             filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "287"
-            endingLineNumber = "287"
+            startingLineNumber = "274"
+            endingLineNumber = "274"
             landmarkName = "startProgressBar()"
             landmarkType = "7">
          </BreakpointContent>
@@ -398,8 +398,8 @@
             filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "306"
-            endingLineNumber = "306"
+            startingLineNumber = "293"
+            endingLineNumber = "293"
             landmarkName = "updateProgressBar()"
             landmarkType = "7">
          </BreakpointContent>
@@ -414,8 +414,8 @@
             filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "299"
-            endingLineNumber = "299"
+            startingLineNumber = "286"
+            endingLineNumber = "286"
             landmarkName = "updateProgressBar()"
             landmarkType = "7">
          </BreakpointContent>
@@ -446,8 +446,8 @@
             filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -462,8 +462,8 @@
             filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
             landmarkName = "requestOTP()"
             landmarkType = "7">
          </BreakpointContent>
@@ -472,14 +472,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "834C4680-EBBD-42E3-9445-70146B96A0C4"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "247"
-            endingLineNumber = "247"
+            startingLineNumber = "235"
+            endingLineNumber = "235"
             landmarkName = "requestOTP()"
             landmarkType = "7">
          </BreakpointContent>
@@ -494,8 +494,8 @@
             filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
+            startingLineNumber = "146"
+            endingLineNumber = "146"
             landmarkName = "requestOTP()"
             landmarkType = "7">
          </BreakpointContent>
@@ -552,7 +552,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "042FCD4B-D0FF-4F7E-9ED7-A322C92E5A5D"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PubaliAuthenticator/LoginViewController.swift"
@@ -641,6 +641,54 @@
             startingLineNumber = "20"
             endingLineNumber = "20"
             landmarkName = "showLoginScreen()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "20B1635C-8E3D-4A6D-941E-93016482CEEC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "154"
+            endingLineNumber = "154"
+            landmarkName = "requestOTP()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7B336C17-9E55-460B-8964-164C2C73F768"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubaliAuthenticator/OTPShow/OTPGenerateViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "207"
+            endingLineNumber = "207"
+            landmarkName = "requestOTP()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EF197A44-DF55-421D-AE01-4224C649B1BD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "PubaliAuthenticator/Splash/SplashViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
+            landmarkName = "accessTokenGen()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

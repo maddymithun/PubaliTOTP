@@ -14,5 +14,7 @@ class AllURL{
     static let specificKeyHex = "00112233445566778899aabbccddeeff00112233445566778899aabbccddeeff"
     static let specificIvHex = "00112233445566778899aabbccddeeff" 
     static let MIDWAREURL="https://172.16.254.113/CorporateBankingApiTEST"
+    static let EMIAL="email"
+    static let INSTANCEID="instanceId"
 }
 

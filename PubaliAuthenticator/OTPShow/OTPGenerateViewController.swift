@@ -11,12 +11,11 @@ import CryptoKit
 @available(iOS 13.0, *)
 class OTPGenerateViewController: UIViewController {
     @IBOutlet weak var progressView: UIProgressView!
-    var backgroundTasks: [UIBackgroundTaskIdentifier] = []
     var timer: Timer?
     var counter = 0
-    var countdownTimer: Timer?
+    //var countdownTimer: Timer?
     var totalSeconds = 119
-    var currentSeconds: Int = 119
+    //var currentSeconds: Int = 119
     var progressTimer: Timer?
     var animationView: LottieAnimationView?
     @IBOutlet weak var btnOTPGenerateAction: UIButton!
@@ -40,6 +39,12 @@ class OTPGenerateViewController: UIViewController {
     @IBOutlet weak var lbMailid: UILabel!
     @IBOutlet weak var imgCopyheight: NSLayoutConstraint!
     var symmetricKey: SymmetricKey?
+    var remainingTime: TimeInterval = 120.0
+    var backgroundTask: UIBackgroundTaskIdentifier = .invalid
+    var totalTime: TimeInterval = 120 // 120 seconds
+    var backgroundEnteredTime: Date?
+    var progress: Float = 0.0
+    var enterBackgroundTime: Date?
     override func viewDidLoad() {
         super.viewDidLoad()
         let backgroundImage = UIImage(named: "bgotp")
@@ -59,20 +64,24 @@ class OTPGenerateViewController: UIViewController {
         email = UserDefaults.standard.string(forKey: "email") ?? ""
         print("email: \(email) \(instanceID)")
         uiViewBiometric.setOTPGrayBorder()
-        progressView.progress = 100
+        progressView.progress = 0
         progressView.progressTintColor = UIColor(hexString: "1CB05F")
+        //progressView.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(copyTapped))
         imgCopy.isUserInteractionEnabled = true
         imgCopy.addGestureRecognizer(tapGestureRecognizer)
        // btnOTPGenerateAction.addTarget(self, action: #selector(findOTPFromAPIDesign), for: .touchUpInside)
         btnOTPGenerateAction.setButtonBackground()
         authBearerToken=UserDefaults.standard.string(forKey: "token") ?? ""
+        NotificationCenter.default.addObserver(self, selector: #selector(appWillResignActive), name: UIApplication.willResignActiveNotification, object: nil)
+               NotificationCenter.default.addObserver(self, selector: #selector(appDidBecomeActive), name: UIApplication.didBecomeActiveNotification, object: nil)
         if Reachability.isConnectedToNetwork() {
             processing()
             self.requestOTP()
         }else{
             self.showAlert(alertTitle: "Alert", alertMessage: "Check internet connectivity")
         }
+
     }
     
     
@@ -90,27 +99,6 @@ class OTPGenerateViewController: UIViewController {
         }
         
     }
-//    func startTimer() {
-//        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(timerFired), userInfo: nil, repeats: true)
-//    }
-//    
-//    @objc func timerFired() {
-//        lbTimer.textColor=UIColor(red: 39/255, green: 174/255, blue: 96/255, alpha: 1.0)
-//        imgTimerShow.image = UIImage(named: "timer")
-//        counter += 1
-//        print("Timer fired \(counter) times.")
-//        lbTimer.text = "\(String(format: "%02d", counter))"
-//        if counter >= 10 {
-//            stopTimer()
-//        }
-//    }
-//    func stopTimer() {
-//        timer?.invalidate()
-//        timer = nil
-//        lbTimer.text="00"
-//        lbTimer.textColor=UIColor.lightGray
-//        
-//    }
     
     
     @objc func copyTapped(sender: UITapGestureRecognizer) {
@@ -126,7 +114,7 @@ class OTPGenerateViewController: UIViewController {
     }
     @objc func requestOTP(){
          totalSeconds = 119
-         currentSeconds = 119
+         remainingTime=119
         DispatchQueue.main.async {
             do {
                 self.showSpinner(onView: self.view)
@@ -282,43 +270,63 @@ class OTPGenerateViewController: UIViewController {
     
     func startProgressBar() {
         progressTimer?.invalidate()
-        startNewBackgroundTask()
         //progressTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateProgressBar), userInfo: nil, repeats: true)
-        countdownTimer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
+        timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
                    self?.updateProgressBar()
                }
-        // Renew background task every 25 seconds to avoid termination
-        DispatchQueue.main.asyncAfter(deadline: .now() + 25) {
-                    self.startNewBackgroundTask()
-                }
+//        // Renew background task every 25 seconds to avoid termination
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 25) {
+//                    self.startNewBackgroundTask()
+//                }
     }
     @objc func updateProgressBar() {
 
         progressView.isHidden=false
         progressView.semanticContentAttribute = .forceLeftToRight
         progressView.progressTintColor = UIColor(hexString: "1CB05F")
-        if currentSeconds > 0 {
-                  currentSeconds -= 1
-                  
-                  let minutes = currentSeconds / 60
-                  let seconds = currentSeconds % 60
-                  
-                  lbTimer.text = String(format: "%d:%02d", minutes, seconds)
-                  lbTimer.textColor=UIColor.systemGreen
-                  // Calculate progress as a fraction of total time
-                  let progress = Float(currentSeconds) / Float(totalSeconds)
-                  progressView.progress = progress
-                  imgTimerShow.image = UIImage(named: "timer")
-              } else {
-                  countdownTimer?.invalidate() // Stop the timer
-                  countdownTimer = nil
-                  lbTimer.textColor=UIColor.black
-                  lbTimer.text = "0:00" // Display the end of the timer
-                  progressView.progress = 0.0 // Indicate that the progress is complete
-                  EndOTPFromAPIDesign()
-                  endAllBackgroundTasks()
-                  // Perform additional actions if needed (e.g., show an alert, trigger an event)
-              }
+//        if currentSeconds > 0 {
+//                  currentSeconds -= 1
+//                  
+//                  let minutes = currentSeconds / 60
+//                  let seconds = currentSeconds % 60
+//                  
+//                  lbTimer.text = String(format: "%d:%02d", minutes, seconds)
+//                  lbTimer.textColor=UIColor.systemGreen
+//                  // Calculate progress as a fraction of total time
+//                  let progress = Float(currentSeconds) / Float(totalSeconds)
+//                  progressView.progress = progress
+//                  imgTimerShow.image = UIImage(named: "timer")
+//              } else {
+//                  countdownTimer?.invalidate() // Stop the timer
+//                  countdownTimer = nil
+//                  lbTimer.textColor=UIColor.black
+//                  lbTimer.text = "0:00"
+//                  progressView.progress = 0.0
+//                  EndOTPFromAPIDesign()
+//                  endAllBackgroundTasks()
+//                  // Perform additional actions if needed (e.g., show an alert, trigger an event)
+//              }
+        
+        /////////
+        guard remainingTime > 0 else {
+                    timer?.invalidate()
+                    timer = nil
+                    lbTimer.textColor=UIColor.black
+                    lbTimer.text = "0:00"
+                    progressView.progress = 0.0
+                    EndOTPFromAPIDesign()
+                    //endAllBackgroundTasks()
+                    return
+                }
+                progressView.transform = CGAffineTransform(scaleX: -1.0, y: 1.0)
+                remainingTime -= 1
+                progress = Float(totalTime - remainingTime) / Float(totalTime)
+                progressView.setProgress(progress, animated: true)
+                
+                let minutes = Int(remainingTime) / 60
+                let seconds = Int(remainingTime) % 60
+                lbTimer.text = String(format: "%02d:%02d", minutes, seconds)
+                imgTimerShow.image = UIImage(named: "timer")
     }
     
     @objc  func findOTPFromAPIDesign(){
@@ -349,6 +357,7 @@ class OTPGenerateViewController: UIViewController {
         imgCopy.isHidden=true
         lbOTP.isHidden=true
         self.imgCopyheight.constant=0
+        progressView.progress=0
         imgTimerShow.image = imgTimerShow.image!.withRenderingMode(.alwaysTemplate)
         //imgTimerShow.tintColor = UIColor.black
         imgTimerShow.tintColor = UIColor.lightGray
@@ -482,25 +491,35 @@ class OTPGenerateViewController: UIViewController {
         }
           }
 
-    func startNewBackgroundTask() {
-           endAllBackgroundTasks() // Ensure old tasks are ended to avoid leaks
-           
-           let newTask = UIApplication.shared.beginBackgroundTask {
-               self.endAllBackgroundTasks() // Called if the system ends the task
-           }
-           
-           backgroundTasks.append(newTask)
-       }
 
-       func endAllBackgroundTasks() {
-           backgroundTasks.forEach { task in
-               if task != .invalid {
-                   UIApplication.shared.endBackgroundTask(task)
-               }
-           }
-           backgroundTasks = []
-       }
-    
+    @objc func appWillResignActive() {
+            enterBackgroundTime = Date()
+            backgroundTask = UIApplication.shared.beginBackgroundTask {
+                UIApplication.shared.endBackgroundTask(self.backgroundTask)
+                self.backgroundTask = .invalid
+            }
+        }
+        
+        @objc func appDidBecomeActive() {
+            if let enterBackgroundTime = enterBackgroundTime {
+                let elapsedTime = Date().timeIntervalSince(enterBackgroundTime)
+                remainingTime -= elapsedTime
+                if remainingTime < 0 {
+                    remainingTime = 0
+                }
+                //progress = Float(totalTime - remainingTime) / Float(totalTime)
+                progress = Float(remainingTime) / Float(totalTime)
+                progressView.setProgress(progress, animated: true)
+                
+                let minutes = Int(remainingTime) / 60
+                let seconds = Int(remainingTime) % 60
+                lbTimer.text = String(format: "%02d:%02d", minutes, seconds)
+            }
+            if backgroundTask != .invalid {
+                UIApplication.shared.endBackgroundTask(backgroundTask)
+                backgroundTask = .invalid
+            }
+        }
     
 }
 extension UIView{
