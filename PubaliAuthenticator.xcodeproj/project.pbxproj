@@ -24,6 +24,9 @@
 		AF5B1E802BA2C2EB00D44F9A /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF5B1E7F2BA2C2EB00D44F9A /* LoginViewController.swift */; };
 		AF9BF7482BB3F97D00689EBE /* DeviceRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9BF7472BB3F97D00689EBE /* DeviceRegistration.swift */; };
 		AFBBCF302BA2FEEE0069C8D3 /* OTPGenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBBCF2F2BA2FEEE0069C8D3 /* OTPGenerateViewController.swift */; };
+		C30A14032C311BE800C6868E /* DeviceLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30A14022C311BE800C6868E /* DeviceLoginViewController.swift */; };
+		C30A14072C31351100C6868E /* DeviceSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C30A14062C31351100C6868E /* DeviceSignUpViewController.swift */; };
+		C32BB8962C2D6B3B005A04AA /* pubalilogo.png in Resources */ = {isa = PBXBuildFile; fileRef = C32BB8952C2D6B3B005A04AA /* pubalilogo.png */; };
 		C3B665AC2BDF4D4A00F4C3DE /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B6659F2BDF4D4A00F4C3DE /* SplashViewController.swift */; };
 		C3B665B02BDF4D4A00F4C3DE /* DeviceRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B665A52BDF4D4A00F4C3DE /* DeviceRegistration.swift */; };
 		C3B665B12BDF4D4A00F4C3DE /* OTPGenerateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3B665A72BDF4D4A00F4C3DE /* OTPGenerateViewController.swift */; };
@@ -75,6 +78,9 @@
 		AF5B1E7F2BA2C2EB00D44F9A /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		AF9BF7472BB3F97D00689EBE /* DeviceRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRegistration.swift; sourceTree = "<group>"; };
 		AFBBCF2F2BA2FEEE0069C8D3 /* OTPGenerateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPGenerateViewController.swift; sourceTree = "<group>"; };
+		C30A14022C311BE800C6868E /* DeviceLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceLoginViewController.swift; sourceTree = "<group>"; };
+		C30A14062C31351100C6868E /* DeviceSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceSignUpViewController.swift; sourceTree = "<group>"; };
+		C32BB8952C2D6B3B005A04AA /* pubalilogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pubalilogo.png; sourceTree = "<group>"; };
 		C3B6659F2BDF4D4A00F4C3DE /* SplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		C3B665A52BDF4D4A00F4C3DE /* DeviceRegistration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceRegistration.swift; sourceTree = "<group>"; };
 		C3B665A72BDF4D4A00F4C3DE /* OTPGenerateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OTPGenerateViewController.swift; sourceTree = "<group>"; };
@@ -153,6 +159,7 @@
 		AF5B1E4B2BA2C23600D44F9A /* PubaliAuthenticator */ = {
 			isa = PBXGroup;
 			children = (
+				C30A14012C311BBF00C6868E /* LoginDevice */,
 				C3125DE12C085781001A4780 /* image */,
 				C3B665B92BDF54D800F4C3DE /* Constant */,
 				C3B665AA2BDF4D4A00F4C3DE /* Biometric */,
@@ -229,9 +236,19 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		C30A14012C311BBF00C6868E /* LoginDevice */ = {
+			isa = PBXGroup;
+			children = (
+				C30A14022C311BE800C6868E /* DeviceLoginViewController.swift */,
+				C30A14062C31351100C6868E /* DeviceSignUpViewController.swift */,
+			);
+			path = LoginDevice;
+			sourceTree = "<group>";
+		};
 		C3125DE12C085781001A4780 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				C32BB8952C2D6B3B005A04AA /* pubalilogo.png */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -406,6 +423,7 @@
 				AF5B1E562BA2C23800D44F9A /* Assets.xcassets in Resources */,
 				AF5B1E542BA2C23600D44F9A /* Main.storyboard in Resources */,
 				AF5A9DCA2BB92F310095F780 /* loading.json in Resources */,
+				C32BB8962C2D6B3B005A04AA /* pubalilogo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +495,7 @@
 				C3B665BA2BDF54D800F4C3DE /* AllURL.swift in Sources */,
 				C3B665B12BDF4D4A00F4C3DE /* OTPGenerateViewController.swift in Sources */,
 				AF5B1E512BA2C23600D44F9A /* ViewController.swift in Sources */,
+				C30A14032C311BE800C6868E /* DeviceLoginViewController.swift in Sources */,
 				C3B665BC2BDF54D800F4C3DE /* Utility.swift in Sources */,
 				C3B665B02BDF4D4A00F4C3DE /* DeviceRegistration.swift in Sources */,
 				AF5B1E4D2BA2C23600D44F9A /* AppDelegate.swift in Sources */,
@@ -487,6 +506,7 @@
 				AF5B1E7E2BA2C29A00D44F9A /* SplashViewController.swift in Sources */,
 				AF9BF7482BB3F97D00689EBE /* DeviceRegistration.swift in Sources */,
 				AFBBCF302BA2FEEE0069C8D3 /* OTPGenerateViewController.swift in Sources */,
+				C30A14072C31351100C6868E /* DeviceSignUpViewController.swift in Sources */,
 				C3B802752BE107E70097BE0F /* BioTestViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

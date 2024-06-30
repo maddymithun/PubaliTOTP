@@ -17,22 +17,25 @@ class SplashViewController: UIViewController {
     }
     func showLoginScreen() {
    
-      let  instanceId = UserDefaults.standard.string(forKey: "instanceId")
-        
-        if instanceId != nil{
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let loginViewController = storyboard.instantiateViewController(withIdentifier: "otp") as! OTPGenerateViewController
-            loginViewController.modalPresentationStyle = .fullScreen
-            present(loginViewController, animated: true, completion: nil)
-            
-        } else {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let loginViewController = storyboard.instantiateViewController(withIdentifier: "login") as! LoginViewController
-            loginViewController.modalPresentationStyle = .fullScreen
-            present(loginViewController, animated: true, completion: nil)
-           
-        }
-        
+//      let  instanceId = UserDefaults.standard.string(forKey: "instanceId")
+//        
+//        if instanceId != nil{
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let loginViewController = storyboard.instantiateViewController(withIdentifier: "otp") as! OTPGenerateViewController
+//            loginViewController.modalPresentationStyle = .fullScreen
+//            present(loginViewController, animated: true, completion: nil)
+//            
+//        } else {
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let loginViewController = storyboard.instantiateViewController(withIdentifier: "login") as! LoginViewController
+//            loginViewController.modalPresentationStyle = .fullScreen
+//            present(loginViewController, animated: true, completion: nil)
+//           
+//        }
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                  let loginViewController = storyboard.instantiateViewController(withIdentifier: "BioMetricViewController") as! BioMetricViewController
+                   loginViewController.modalPresentationStyle = .fullScreen
+                    present(loginViewController, animated: true, completion: nil)
     }
 
     func accessTokenGen(){

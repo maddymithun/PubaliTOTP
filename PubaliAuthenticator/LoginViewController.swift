@@ -75,6 +75,7 @@ class LoginViewController: UIViewController {
                     reqref:ReqRef
                 )
             )
+            
             let encoder = JSONEncoder()
             guard let requestData = try? encoder.encode(requestDetails) else {
                 fatalError("Failed to encode request data")
@@ -101,7 +102,7 @@ class LoginViewController: UIViewController {
               "Content-Type": "application/json",
               "x-api-key": "65654d6sdjhsjdh##"
             ]
-
+            print("request\(urlRequest)")
             // Make the API call
             let task = URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
                 if let error = error {

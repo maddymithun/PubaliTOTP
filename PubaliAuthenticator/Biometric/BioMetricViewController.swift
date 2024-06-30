@@ -10,39 +10,38 @@ import LocalAuthentication
 @available(iOS 13.0, *)
 class BioMetricViewController: UIViewController {
 
+    @IBOutlet weak var lbOr: UILabel!
+    @IBOutlet weak var btnLogin: UIButton!
     @IBOutlet weak var btnGoFaceIDSetting: UIButton!
     @IBOutlet weak var imgFaceId: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
         btnGoFaceIDSetting.isHidden=true
         NSLayoutConstraint.activate([
-                    // Center the image horizontally in the view
             imgFaceId.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-                    // Position the image 100 points from the top (adjust as needed)
             imgFaceId.topAnchor.constraint(equalTo: view.topAnchor, constant: 60),
-                    // Set width and height (adjust as needed)
             imgFaceId.widthAnchor.constraint(equalToConstant: 200), // Example width
             imgFaceId.heightAnchor.constraint(equalToConstant: 200)  // Example height
                 ])
-        
-        // Trigger Face ID authentication when the view loads
+        /// Trigger Face ID authentication when the view loads
                if isFaceIDAvailable() {
                    authenticateWithFaceID()
+                   btnLogin.isHidden=true
+                   lbOr.isHidden=true
                } else {
-                   // If Face ID is not available, handle it appropriately
                    handleFaceIDNotAvailable()
                    btnGoFaceIDSetting.isHidden=false
                }
        
     }
-    // Handle Face ID success
+    /// Handle Face ID success
        func onFaceIDSuccess() {
            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-           let splashViewController = storyboard.instantiateViewController(withIdentifier: "SplashViewController") as! SplashViewController
+           let splashViewController = storyboard.instantiateViewController(withIdentifier: "login") as! LoginViewController
            splashViewController.modalPresentationStyle = .fullScreen
            present(splashViewController, animated: true, completion: nil)
        }
-    // Handle Face ID failure
+    /// Handle Face ID failure
       func onFaceIDFailure(error: NSError) {
           // Handle different failure cases
           var message = "Face ID authentication failed."
@@ -73,7 +72,7 @@ class BioMetricViewController: UIViewController {
             
             return false
         }
-    // Authenticate with Face ID
+    /// Authenticate with Face ID
        func authenticateWithFaceID() {
            let context = LAContext()
            let reason = "Please authenticate with Face ID to access secure content."
@@ -92,7 +91,7 @@ class BioMetricViewController: UIViewController {
                }
            }
        }
-      // Handle the case where Face ID is not available
+      ///Handle the case where Face ID is not available
       func handleFaceIDNotAvailable() {
           let alert = UIAlertController(title: "Face ID Not Available", message: "This device does not support Face ID.", preferredStyle: .alert)
           alert.addAction(UIAlertAction(title: "OK", style: .default))
@@ -165,6 +164,7 @@ class BioMetricViewController: UIViewController {
         // Present the alert controller
         present(alertController, animated: true, completion: nil)
     }
+    /// not use. its used for touch
     func authenticateWithTouchID(completion: @escaping (Bool, Error?) -> Void) {
         let context = LAContext()
         var error: NSError?
@@ -197,4 +197,10 @@ class BioMetricViewController: UIViewController {
         }
     }
 
+    @IBAction func goToDeviceLogin(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let splashViewController = storyboard.instantiateViewController(withIdentifier: "DeviceLoginViewController") as! DeviceLoginViewController
+        splashViewController.modalPresentationStyle = .fullScreen
+        present(splashViewController, animated: true, completion: nil)
+    }
 }
