@@ -18,8 +18,12 @@ class DeviceSignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         emailCodeViewDesign()
-        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+               view.addGestureRecognizer(tapGesture)
     }
+    @objc func dismissKeyboard() {
+           view.endEditing(true)
+       }
     @IBAction func btnSingup(_ sender: Any) {
         if isValidEmail(etEmail.text ?? ""){
             if etPassowrd.text?.count ?? 0>6{
@@ -58,11 +62,11 @@ class DeviceSignUpViewController: UIViewController {
             return false
         }
            /// Save email to keychain
-           let emailSaved = KeychainWrapper.standard.set(email, forKey: "userEmail")
+           let emailSaved = UserDefaults.standard.set(email, forKey: "userEmail")
            /// Save password to keychain
-           let passwordSaved = KeychainWrapper.standard.set(password, forKey: "userPassword")
+           let passwordSaved = UserDefaults.standard.set(password, forKey: "userPassword")
             
-           return emailSaved && passwordSaved
+           return true
        }
 
 }

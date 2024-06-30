@@ -592,7 +592,7 @@ with this authentication app.</string>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dUl-Bk-Td5">
                                         <rect key="frame" x="46" y="8" width="342" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -612,16 +612,10 @@ with this authentication app.</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do not have account ? Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1o-OI-yQc">
-                                <rect key="frame" x="16" y="469.33333333333331" width="396" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENE-oa-psF">
                                 <rect key="frame" x="16" y="412.33333333333331" width="396" height="41"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="41" id="hga-hH-Lg5"/>
+                                    <constraint firstAttribute="height" constant="41" id="Wlx-fX-IJy"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Login">
@@ -631,28 +625,37 @@ with this authentication app.</string>
                                     <action selector="btnLogin:" destination="hNm-SK-tBv" eventType="touchUpInside" id="5Cf-gs-m20"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Do not have account ? Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h1o-OI-yQc">
+                                <rect key="frame" x="16" y="469.33333333333331" width="396" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="FvH-4r-62Z"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qZn-iR-eyD"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ENE-oa-psF" firstAttribute="top" secondItem="Eu0-m2-5ZG" secondAttribute="bottom" constant="20" id="05y-30-Q0o"/>
                             <constraint firstItem="qZn-iR-eyD" firstAttribute="trailing" secondItem="3hd-0y-eY1" secondAttribute="trailing" constant="16" id="0NP-IE-3xg"/>
+                            <constraint firstItem="h1o-OI-yQc" firstAttribute="leading" secondItem="qZn-iR-eyD" secondAttribute="leading" constant="16" id="1Jt-yH-XCf"/>
                             <constraint firstItem="3hd-0y-eY1" firstAttribute="leading" secondItem="qZn-iR-eyD" secondAttribute="leading" constant="16" id="74Z-0w-dUH"/>
-                            <constraint firstItem="qZn-iR-eyD" firstAttribute="trailing" secondItem="ENE-oa-psF" secondAttribute="trailing" constant="16" id="7CL-xc-80U"/>
+                            <constraint firstItem="ENE-oa-psF" firstAttribute="leading" secondItem="qZn-iR-eyD" secondAttribute="leading" constant="16" id="7rm-cf-WVh"/>
                             <constraint firstItem="m43-lE-JjU" firstAttribute="centerX" secondItem="IsL-RL-IpS" secondAttribute="centerX" id="HWU-Hk-JhP"/>
                             <constraint firstItem="vkd-ta-Ho6" firstAttribute="leading" secondItem="qZn-iR-eyD" secondAttribute="leading" constant="16" id="I5G-N7-Af7"/>
-                            <constraint firstItem="ENE-oa-psF" firstAttribute="leading" secondItem="qZn-iR-eyD" secondAttribute="leading" constant="16" id="KpG-I7-prC"/>
                             <constraint firstItem="Eu0-m2-5ZG" firstAttribute="leading" secondItem="qZn-iR-eyD" secondAttribute="leading" constant="16" id="NnX-Iy-swA"/>
                             <constraint firstItem="qZn-iR-eyD" firstAttribute="trailing" secondItem="uzn-uj-qRq" secondAttribute="trailing" constant="16" id="Q1N-q7-jNo"/>
+                            <constraint firstItem="qZn-iR-eyD" firstAttribute="trailing" secondItem="ENE-oa-psF" secondAttribute="trailing" constant="16" id="S73-h6-sR1"/>
                             <constraint firstItem="qZn-iR-eyD" firstAttribute="trailing" secondItem="vkd-ta-Ho6" secondAttribute="trailing" constant="16" id="T8d-JA-NIY"/>
                             <constraint firstItem="qZn-iR-eyD" firstAttribute="trailing" secondItem="Eu0-m2-5ZG" secondAttribute="trailing" constant="16" id="TqI-ae-jQy"/>
                             <constraint firstItem="m43-lE-JjU" firstAttribute="top" secondItem="qZn-iR-eyD" secondAttribute="top" constant="32" id="URr-Q1-xCW"/>
-                            <constraint firstItem="qZn-iR-eyD" firstAttribute="trailing" secondItem="h1o-OI-yQc" secondAttribute="trailing" constant="16" id="UUj-8S-aZ6"/>
-                            <constraint firstItem="h1o-OI-yQc" firstAttribute="leading" secondItem="qZn-iR-eyD" secondAttribute="leading" constant="16" id="VYr-7R-APw"/>
                             <constraint firstItem="uzn-uj-qRq" firstAttribute="top" secondItem="m43-lE-JjU" secondAttribute="bottom" constant="16" id="Z1V-nx-B27"/>
                             <constraint firstItem="uzn-uj-qRq" firstAttribute="leading" secondItem="qZn-iR-eyD" secondAttribute="leading" constant="16" id="e9K-bt-3hg"/>
-                            <constraint firstItem="h1o-OI-yQc" firstAttribute="top" secondItem="ENE-oa-psF" secondAttribute="bottom" constant="16" id="jXN-gq-Vij"/>
+                            <constraint firstItem="h1o-OI-yQc" firstAttribute="top" secondItem="ENE-oa-psF" secondAttribute="bottom" constant="16" id="hft-Tn-sGa"/>
+                            <constraint firstItem="qZn-iR-eyD" firstAttribute="trailing" secondItem="h1o-OI-yQc" secondAttribute="trailing" constant="16" id="jgh-4V-u1r"/>
                             <constraint firstItem="3hd-0y-eY1" firstAttribute="top" secondItem="uzn-uj-qRq" secondAttribute="bottom" constant="16" id="p3Z-Ky-fNa"/>
+                            <constraint firstItem="ENE-oa-psF" firstAttribute="top" secondItem="Eu0-m2-5ZG" secondAttribute="bottom" constant="20" id="qfr-ha-qhG"/>
                             <constraint firstItem="Eu0-m2-5ZG" firstAttribute="top" secondItem="vkd-ta-Ho6" secondAttribute="bottom" constant="16" id="tYp-gT-h3U"/>
                             <constraint firstItem="vkd-ta-Ho6" firstAttribute="top" secondItem="3hd-0y-eY1" secondAttribute="bottom" constant="16" id="x2K-L8-7w3"/>
                         </constraints>
@@ -729,7 +732,7 @@ with this authentication app.</string>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ok9-Hc-seJ">
                                         <rect key="frame" x="46" y="8" width="342" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -776,7 +779,7 @@ with this authentication app.</string>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wcH-vD-ihI">
                                         <rect key="frame" x="46" y="8" width="342" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="password"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>

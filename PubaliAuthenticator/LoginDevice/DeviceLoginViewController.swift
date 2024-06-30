@@ -10,6 +10,7 @@ import SwiftKeychainWrapper
 
 class DeviceLoginViewController: UIViewController {
 
+    @IBOutlet weak var lbForgetPassword: UILabel!
     @IBOutlet weak var lbSingup: UILabel!
     @IBOutlet weak var lbTitleSignUpSignIn: UILabel!
     @IBOutlet weak var etPassword: UITextField!
@@ -19,11 +20,11 @@ class DeviceLoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         emailCodeViewDesign()
-         let emailSaved = KeychainWrapper.standard.string(forKey: "userEmail")
+         let emailSaved = UserDefaults.standard.string(forKey: "userEmail")
         if emailSaved == nil{
            
         }else{
-            etEmail.text=KeychainWrapper.standard.string(forKey: "userEmail")
+            etEmail.text=UserDefaults.standard.string(forKey: "userEmail")
             lbSingup.isHidden=true
         }
         updateLabel(with: "Do not have account? ")
@@ -91,8 +92,8 @@ class DeviceLoginViewController: UIViewController {
     ///login check
     func login(email: String, password: String) -> Bool {
             // Retrieve email and password from keychain
-            if let storedEmail = KeychainWrapper.standard.string(forKey: "userEmail"),
-               let storedPassword = KeychainWrapper.standard.string(forKey: "userPassword") {
+            if let storedEmail = UserDefaults.standard.string(forKey: "userEmail"),
+               let storedPassword = UserDefaults.standard.string(forKey: "userPassword") {
                 /// Check if the provided credentials match the stored credentials
                 if email == storedEmail && password == storedPassword{
                     return true
