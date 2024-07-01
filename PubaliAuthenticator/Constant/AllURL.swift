@@ -7,7 +7,7 @@
 
 import Foundation
 class AllURL{
-    static var BASE_URL : String = "http://172.25.22.19/picbtotp"
+    static var BASE_URL : String = "https://mfsautht.pubalibankbd.com:26878/totp"
     
     static let  FM_DETAILS : String =  BASE_URL+"/CBBaseRouter/v1/portable"
     static let  ENCKEY : String =  "tuqwojtweo5784306749ghl"
