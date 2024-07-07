@@ -36,10 +36,21 @@ class BioMetricViewController: UIViewController {
     }
     /// Handle Face ID success
        func onFaceIDSuccess() {
-           let storyboard = UIStoryboard(name: "Main", bundle: nil)
-           let splashViewController = storyboard.instantiateViewController(withIdentifier: "login") as! LoginViewController
-           splashViewController.modalPresentationStyle = .fullScreen
-           present(splashViewController, animated: true, completion: nil)
+                 let  instanceId = UserDefaults.standard.string(forKey: "instanceId")
+           
+                   if instanceId != nil{
+                       let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                       let loginViewController = storyboard.instantiateViewController(withIdentifier: "otp") as! OTPGenerateViewController
+                       loginViewController.modalPresentationStyle = .fullScreen
+                       present(loginViewController, animated: true, completion: nil)
+           
+                   } else {
+                       let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                       let loginViewController = storyboard.instantiateViewController(withIdentifier: "login") as! LoginViewController
+                       loginViewController.modalPresentationStyle = .fullScreen
+                       present(loginViewController, animated: true, completion: nil)
+           
+                   }
        }
     /// Handle Face ID failure
       func onFaceIDFailure(error: NSError) {

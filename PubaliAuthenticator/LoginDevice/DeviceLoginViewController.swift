@@ -31,6 +31,8 @@ class DeviceLoginViewController: UIViewController {
         lbSingup.isUserInteractionEnabled = true
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(gotoSignUP))
         lbSingup.addGestureRecognizer(tapGesture)
+        etPassword.isSecureTextEntry = true
+
     }
     @objc func gotoSignUP(){
         let storyboard = UIStoryboard(name: "Main", bundle: nil)

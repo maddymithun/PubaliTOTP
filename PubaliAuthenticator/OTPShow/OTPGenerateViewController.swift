@@ -17,6 +17,7 @@ class OTPGenerateViewController: UIViewController {
     var totalSeconds = 119
     //var currentSeconds: Int = 119
     var progressTimer: Timer?
+    var IsOkay:Bool=false
     var animationView: LottieAnimationView?
     @IBOutlet weak var btnOTPGenerateAction: UIButton!
     @IBOutlet weak var btnOTPHeight: NSLayoutConstraint!
@@ -62,7 +63,6 @@ class OTPGenerateViewController: UIViewController {
         generateImageView()
         instanceID = UserDefaults.standard.string(forKey: "instanceId") ?? ""
         email = UserDefaults.standard.string(forKey: "email") ?? ""
-        print("email: \(email) \(instanceID)")
         uiViewBiometric.setOTPGrayBorder()
         progressView.progress = 0
         progressView.progressTintColor = UIColor(hexString: "1CB05F")
@@ -183,6 +183,7 @@ class OTPGenerateViewController: UIViewController {
                         self.firstTimeAllGone()
                         self.stopLoadingAnimation()
                         self.removeSpinner()
+                        self.IsOkay=true
                         return
                     }
                     
@@ -192,6 +193,7 @@ class OTPGenerateViewController: UIViewController {
                         self.showAlert(alertTitle: "Alert", alertMessage: "Unexpected error")
                         self.stopLoadingAnimation()
                         self.removeSpinner()
+                        self.IsOkay=true
                         return
                     }
                     
@@ -227,6 +229,7 @@ class OTPGenerateViewController: UIViewController {
                                             self.EndOTPFromAPIDesign()
                                             self.showErrorAlert(viewController: self, message: "Session has been expire")
                                             self.removeSpinner()
+                                            self.IsOkay=true
                                         }
                                     }
                                     
@@ -235,12 +238,15 @@ class OTPGenerateViewController: UIViewController {
                                             self.showAlert(alertTitle: "Alert", alertMessage:response.message ?? "")
                                             self.stopLoadingAnimation()
                                             self.EndOTPFromAPIDesign()
+                                            //self.firstTimeAllGone()
                                             self.removeSpinner()
+                                            self.IsOkay=true
                                         }
                                     }
                                 } catch {
                                     print("Error parsing JSON: \(error)")
                                     self.removeSpinner()
+                                    self.IsOkay=true
                                 }
                             }
                             
@@ -252,6 +258,7 @@ class OTPGenerateViewController: UIViewController {
                                 self.stopLoadingAnimation()
                                 self.showAlert(alertTitle: "Alert", alertMessage: "Somethings went wrong")
                                 self.removeSpinner()
+                                self.IsOkay=true
                             }
                         }
                         
@@ -270,44 +277,15 @@ class OTPGenerateViewController: UIViewController {
     
     func startProgressBar() {
         progressTimer?.invalidate()
-        //progressTimer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateProgressBar), userInfo: nil, repeats: true)
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { [weak self] _ in
                    self?.updateProgressBar()
                }
-//        // Renew background task every 25 seconds to avoid termination
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 25) {
-//                    self.startNewBackgroundTask()
-//                }
     }
     @objc func updateProgressBar() {
 
         progressView.isHidden=false
         progressView.semanticContentAttribute = .forceLeftToRight
         progressView.progressTintColor = UIColor(hexString: "1CB05F")
-//        if currentSeconds > 0 {
-//                  currentSeconds -= 1
-//                  
-//                  let minutes = currentSeconds / 60
-//                  let seconds = currentSeconds % 60
-//                  
-//                  lbTimer.text = String(format: "%d:%02d", minutes, seconds)
-//                  lbTimer.textColor=UIColor.systemGreen
-//                  // Calculate progress as a fraction of total time
-//                  let progress = Float(currentSeconds) / Float(totalSeconds)
-//                  progressView.progress = progress
-//                  imgTimerShow.image = UIImage(named: "timer")
-//              } else {
-//                  countdownTimer?.invalidate() // Stop the timer
-//                  countdownTimer = nil
-//                  lbTimer.textColor=UIColor.black
-//                  lbTimer.text = "0:00"
-//                  progressView.progress = 0.0
-//                  EndOTPFromAPIDesign()
-//                  endAllBackgroundTasks()
-//                  // Perform additional actions if needed (e.g., show an alert, trigger an event)
-//              }
-        
-        /////////
         guard remainingTime > 0 else {
                     timer?.invalidate()
                     timer = nil
@@ -501,20 +479,26 @@ class OTPGenerateViewController: UIViewController {
         }
         
         @objc func appDidBecomeActive() {
-            if let enterBackgroundTime = enterBackgroundTime {
-                let elapsedTime = Date().timeIntervalSince(enterBackgroundTime)
-                remainingTime -= elapsedTime
-                if remainingTime < 0 {
-                    remainingTime = 0
+            if IsOkay{
+               // self.EndOTPFromAPIDesign()
+            }else{
+                if let enterBackgroundTime = enterBackgroundTime {
+                    let elapsedTime = Date().timeIntervalSince(enterBackgroundTime)
+                    remainingTime -= elapsedTime
+                    if remainingTime < 0 {
+                        remainingTime = 0
+                    }
+                    //progress = Float(totalTime - remainingTime) / Float(totalTime)
+                    progress = Float(remainingTime) / Float(totalTime)
+                    progressView.setProgress(progress, animated: true)
+                    
+                    let minutes = Int(remainingTime) / 60
+                    let seconds = Int(remainingTime) % 60
+                    lbTimer.text = String(format: "%02d:%02d", minutes, seconds)
                 }
-                //progress = Float(totalTime - remainingTime) / Float(totalTime)
-                progress = Float(remainingTime) / Float(totalTime)
-                progressView.setProgress(progress, animated: true)
-                
-                let minutes = Int(remainingTime) / 60
-                let seconds = Int(remainingTime) % 60
-                lbTimer.text = String(format: "%02d:%02d", minutes, seconds)
             }
+            
+            
             if backgroundTask != .invalid {
                 UIApplication.shared.endBackgroundTask(backgroundTask)
                 backgroundTask = .invalid

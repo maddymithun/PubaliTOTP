@@ -696,6 +696,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PubaliAuthenticator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "PDA Authenticator";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "To Open Viewcontroller need User authentication";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -731,6 +732,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PubaliAuthenticator/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "PDA Authenticator";
 				INFOPLIST_KEY_NSFaceIDUsageDescription = "To Open Viewcontroller need User authentication";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
